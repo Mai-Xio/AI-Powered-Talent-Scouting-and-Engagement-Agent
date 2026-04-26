@@ -115,12 +115,12 @@ combinedScore = 0.6 * matchScore + 0.4 * interestScore
 
 The app is designed to respect limited free model quotas:
 
-- Deterministic scoring runs first.
-- Gemini is used for structured JD parsing when `GEMINI_API_KEY` is present. Gemini Model is set to Gemini 3.1 flash lite for faster inference and higher rate limits in free API from Google AI Studio.
-- OpenRouter uses `nvidia/nemotron-3-super-120b-a12b:free` by default for one shortlist-review agent call per uncached run. I chose this due to it's speed from nvidia provider while being very high reasoning agent.
+- Deterministic scoring runs first for demo purpose only.
+- Gemini is used for structured JD parsing when `GEMINI_API_KEY` is present. Gemini Model is set to Gemini 3.1 flash lite for faster inference and since it has higher rate limits in free API from Google AI Studio.
+- OpenRouter uses `nvidia/nemotron-3-super-120b-a12b:free` by default for one shortlist-review agent call per uncached run. I chose this due to it's speed of inference from nvidia provider while being a highly reasoning agent.
 - Runs are cached by JD and weighting hash in memory during a dev session.
 - The response includes a `modelBudget` ledger with call counts and fallback notes.
-- Default guardrails are set for the limits you described: Gemini 15 RPM / 250k TPM / 500 RPD and OpenRouter free 20 RPM / 50 RPD. These can be changed through env vars.
+- Default guardrails are set for the limits you described: Gemini 15 RPM / 250k TPM / 500 RPD and OpenRouter free 20 RPM / 50 RPD. These can be changed through env variables.
 - Model calls have hard timeouts by default: Gemini 12 seconds and OpenRouter 25 seconds. If a provider is slow, deterministic scoring still returns a usable shortlist.
 
 ## AI Agent Workflow
