@@ -139,34 +139,8 @@ The app is designed to respect limited free model quotas:
 - The app is decision support for recruiters, not an automated rejection system.
 - The audit panel records score factors, evidence paths, and fallback behavior.
 
-## GitHub Upload Contents
 
-Upload these tracked project files and folders:
-
-- Root config: `.env.example`, `.gitignore`, `next-env.d.ts`, `next.config.mjs`, `package.json`, `package-lock.json`, `playwright.config.ts`, `postcss.config.mjs`, `tailwind.config.ts`, `tsconfig.json`, `vitest.config.ts`
-- App source: `src/`
-- Tests: `tests/`, `e2e/`
-- Samples: `samples/`
-- Utility scripts: `scripts/`
-- Submission docs: `README.md`, `ARCHITECTURE.md`, `DEMO_SCRIPT.md`, `ONE_PAGE_WRITEUP.md`, `docs-submission-checklist.md`
-
-Do not upload these local-only files and folders:
-
-- Secrets: `.env`, `.env.local`, `.env.*.local`
-- Dependencies/build output: `node_modules/`, `.next/`, `out/`
-- Caches/reports/logs: `.npm-cache/`, `coverage/`, `playwright-report/`, `test-results/`, `*.tsbuildinfo`, `dev-server.log`, `dev-server.err`, npm/yarn debug logs
-
-## Fit To Abstract And Judging Criteria
-
-- **End-to-end working flow:** the app takes a JD, parses it, discovers candidates, scores them, simulates outreach, ranks the shortlist, and exports CSV/JSON.
-- **Core agent quality:** Gemini handles structured JD extraction, deterministic agents handle discovery/scoring/outreach, and OpenRouter Nemotron reviews the shortlist under rate and timeout guards.
-- **Output quality:** every candidate has separate Match Score and Interest Score, combined rank, suggested action, transcript, evidence rows, and audit notes.
-- **Technical implementation:** typed Next.js app, Zod schemas, API routes, model budget ledger, deterministic fallbacks, unit tests, E2E test, and clear setup docs.
-- **Innovation:** skill taxonomy/adjacency evidence, candidate-interest simulation, and agent review notes make the prototype more than a resume filter.
-- **UX:** the UI is organized as Job Description → Agent Run → Ranked Shortlist → Candidate Review, with live timing and export actions.
-- **Clean documentation:** README, architecture, sample inputs/outputs, demo narration script, and one-page write-up are included.
-
-Research anchors used during planning:
+## Research anchors used during planning:
 
 - [ESCO](https://employment-social-affairs.ec.europa.eu/policies-and-activities/skills-and-qualifications/skills-jobs/european-skillscompetences-qualifications-and-occupations-esco_en)
 - [O*NET Web Services](https://services.onetcenter.org/about)
@@ -179,13 +153,6 @@ Research anchors used during planning:
 - [EEOC Selection Guidance](https://www.eeoc.gov/laws/guidance/employment-tests-and-selection-procedures)
 - [DOL Inclusive Hiring Framework](https://www.dol.gov/newsroom/releases/odep/odep20240924)
 
-## Samples
-
-- `samples/sample-jd-hr-ai-product-engineer.txt`
-- `samples/sample-jd-full-stack-ai-dashboard.txt`
-- `samples/sample-output.json`
-- `samples/shortlist.csv`
-- `ONE_PAGE_WRITEUP.md`
 
 ## Tests
 
@@ -195,5 +162,3 @@ npm.cmd run build
 npm.cmd run e2e:install
 npm.cmd run e2e
 ```
-
-The Playwright test starts the local Next.js server and runs through the main recruiter workflow.
