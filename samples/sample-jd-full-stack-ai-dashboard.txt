@@ -1,0 +1,22 @@
+Senior Full-stack Engineer - AI Operations Dashboard
+
+Location: Remote US or Canada
+Work mode: remote
+Experience: 5+ years
+
+Build a data-rich dashboard for operations teams using React, TypeScript, Next.js, Node.js APIs, PostgreSQL, analytics, and workflow automation. The role is product-heavy and requires strong UI systems judgment.
+
+Must have:
+- React
+- TypeScript
+- Next.js
+- Node.js
+- PostgreSQL
+- Analytics
+
+Nice to have:
+- RAG
+- User research
+- Experimentation
+
+Compensation: 140000 to 185000 USD

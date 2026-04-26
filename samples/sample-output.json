@@ -1,0 +1,30 @@
+{
+  "sample": "hr-ai-product-engineer",
+  "expectedTopCandidates": [
+    "Maya Shah",
+    "Elena Volkova",
+    "Amina Okafor"
+  ],
+  "scoring": {
+    "combined": "0.6 * matchScore + 0.4 * interestScore",
+    "matchDimensions": [
+      "skill coverage",
+      "skill depth",
+      "seniority fit",
+      "domain relevance",
+      "location/work mode",
+      "adjacent skills",
+      "availability/compensation"
+    ],
+    "interestDimensions": [
+      "openness",
+      "timeline",
+      "motivation",
+      "compensation",
+      "work mode",
+      "objection risk",
+      "specificity"
+    ]
+  },
+  "note": "Run npm.cmd run dev and use the default sample to generate a fresh full export."
+}

@@ -1,0 +1,28 @@
+Senior AI Product Engineer - Recruiter Copilot
+
+Location: Bengaluru or Remote India
+Work mode: hybrid or remote
+Experience: 6+ years
+
+We are building an explainable recruiter workspace that parses job descriptions, maps skills to a knowledge graph, ranks candidate profiles, and simulates candidate outreach for recruiter review.
+
+Responsibilities:
+- Build Python or FastAPI services for JD parsing, candidate matching, and scoring.
+- Design RAG and vector search workflows over resumes, projects, and recruiter notes.
+- Partner with talent operations to make candidate shortlists transparent and useful.
+- Create LLM evaluation harnesses for extraction quality, hallucination risk, and recruiter usefulness.
+- Ship product-minded workflows with clear audit trails.
+
+Must have:
+- Python
+- RAG or retrieval augmented generation
+- Vector search or semantic search
+- LLM evaluation
+- Recruiting operations or HR Tech experience
+
+Nice to have:
+- FastAPI
+- Conversational AI
+- Workflow automation
+
+Compensation: 45000 to 70000 USD equivalent
