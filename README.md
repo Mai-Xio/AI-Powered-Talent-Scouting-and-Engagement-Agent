@@ -32,7 +32,7 @@ OPENROUTER_RATE_LIMIT_RPD=50
 OPENROUTER_TIMEOUT_MS=25000
 ```
 
-The prototype works without keys using deterministic parsing, scoring, and simulated outreach.
+The prototype works without keys using deterministic parsing, scoring, and simulated outreach (when no api keys are provided, But does use the AI agent when it is provided, I made the deterministic example only for this demo incase API keys does not exist)
 
 ## What It Does
 
